@@ -1,7 +1,9 @@
-<script src="socket.io.js"></script>
+<link rel="stylesheet" href="style.css" />
+
+<script src="/socket.io/socket.io.js"></script>
 
 <script>
-  const socket = io("http://localhost:3000/");
+  const socket = io();
 
   socket.on("connected", () => {
     console.log("Connected");
