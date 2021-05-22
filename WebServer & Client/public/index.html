@@ -5,7 +5,7 @@
 <script>
   const socket = io();
 
-  socket.on("connected", () => {
+  socket.on("connect", () => {
     console.log("Connected");
   });
   socket.on("disconnect", () => {
