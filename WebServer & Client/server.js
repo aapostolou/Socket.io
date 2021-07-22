@@ -3,7 +3,7 @@ const app = express();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server);
 
-const port = 1994;
+const port = process.env.PORT || 1994;
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
